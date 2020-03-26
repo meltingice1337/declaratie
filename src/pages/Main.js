@@ -15,6 +15,7 @@ import Section from "../components/Section";
 import TextField from "../components/TextField";
 import CheckboxLabel from "../components/CheckboxLabel";
 import Signature from "../components/Signature";
+import ActionLink from "../components/ActionLink";
 
 import Renderer from "../pdf/Renderer";
 
@@ -192,7 +193,7 @@ function Main() {
             canvasProps={{width: 760, height: 200}}
           />
         </Signature>
-
+        <ActionLink onClick={() => signature.current.clear()}>Sterge semantura</ActionLink>
       </Section>
 
       <Section align="center">
